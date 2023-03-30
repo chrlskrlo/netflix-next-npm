@@ -2,15 +2,15 @@
 import { useRouter } from 'next/router';
 import { UserAuth } from '@/context/AuthContext'
 
-const account = () => {
+const ProtectedRoute = ({children}) => {
     const router = useRouter();
     const {user} = UserAuth();
   
     if(!user) {
         router.push('/')
-        return null
-       
+        return null 
 }
+return children;
 }
 
-export default account
+export default ProtectedRoute
