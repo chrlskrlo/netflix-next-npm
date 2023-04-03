@@ -18,23 +18,23 @@ const Navbar = () => {
     }
   }
   return (
-    <div className='flex items-center justify-around p-4 z-[100] absolute w-full'>
-      <Link href="/">
+    <div className='flex items-center justify-between p-4 z-[100] absolute w-full'>
+      <Link onClick={handleLogout} href="/">
         <h1 className='text-red-600 text-4xl font-bold cursor-pointer'>NETFLIX</h1>
       </Link>
       {user?.email ? (
         <div>
           <Link href="/account">
-            <button className='text-white pr-4'>Account</button>
+            <button className='text-white pr-4 transition duration-350 ease-in-out hover:scale-110 hover:text-red-600'>Account</button>
           </Link>
          
-            <button onClick={handleLogout} className='bg-red-600 px-6 py-2 rounded cursor-pointer'>Logout</button>
+            <button onClick={handleLogout} className='text-white bg-red-600 px-6 py-2 rounded cursor-pointer'>Logout</button>
           
         </div>
        ) : (
         <div>
           <Link href="/login">
-            <button className='text-white pr-4'>Sign In</button>
+            <button className='text-white pr-4 transition duration-350 ease-in-out hover:scale-110 hover:text-red-600'>Sign In</button>
           </Link>
           <Link href="/signup">
             <button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white hover:bg-red-700/80'>Sign Up</button>

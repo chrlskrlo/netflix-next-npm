@@ -19,7 +19,7 @@ const signup = () => {
     e.preventDefault()
     try {
          await signUp(email,password)
-         router.push('/')
+         router.push('/netflix')
     } catch (error) {
       console.log(error)
     }
