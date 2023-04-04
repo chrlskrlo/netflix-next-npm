@@ -10,9 +10,11 @@ const Card2 = () => {
     <div className='w-full py-16 px-4 border-b-8 border-gray-600'>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
           <div>
-            <Image className='w-[500px] py-8' 
+            <Image 
+            className='w-[500px] py-8' 
             src={cardnetflixImage} 
-            unoptimized={true} 
+            unoptimized={true}
+            alt='/' 
             />
           </div>
           <div className='flex flex-col justify-center text-white'>

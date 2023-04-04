@@ -13,7 +13,12 @@ const Card1 = () => {
                         <p className='text-white text-xl md:text-2xl mt-4'>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                     </div>
                     <div className='rounded'>
-                    <Image className='w-[500px] mx-auto py-8' src={cardImage} unoptimized={true} />
+                    <Image 
+                    className='w-[500px] mx-auto py-8' 
+                    src={cardImage} 
+                    unoptimized={true} 
+                    alt='/' 
+                    />
                     </div> 
                 </div>
             </div>

@@ -13,7 +13,12 @@ const Card3 = () => {
             <p className='text-xl md:text-2xl mt-4'>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
         </div>
         <div>
-           <Image className='w-[500px] py-8 rounded-lg mx-auto' src={cardnetflixkidsImage} alt="/" unoptimized={true} />
+           <Image 
+           className='w-[500px] py-8 rounded-lg mx-auto' 
+           src={cardnetflixkidsImage} 
+           alt="/" 
+           unoptimized={true} 
+           />
         </div>
 
      </div>
